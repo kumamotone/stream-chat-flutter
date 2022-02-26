@@ -40,7 +40,10 @@ dependencies:
   substring_highlight: ^1.0.26
   synchronized: ^3.0.0
   url_launcher: ^6.0.3
-  video_compress: ^3.0.0
+  video_compress:
+    git:
+      url: https://github.com/jonataslaw/VideoCompress.git
+      ref: master
   video_player: ^2.1.0
   video_thumbnail: ^0.4.3
   visibility_detector: ^0.2.0
