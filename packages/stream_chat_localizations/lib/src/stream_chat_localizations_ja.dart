@@ -13,7 +13,7 @@ class StreamChatLocalizationsJa extends GlobalStreamChatLocalizations {
   String get loadingUsersError => 'ユーザーの読み込みができません';
 
   @override
-  String get noUsersLabel => '現在、ユーザーはいません。';
+  String get noUsersLabel => 'ユーザーはいません';
 
   @override
   String get retryLabel => '再試行';
@@ -29,26 +29,26 @@ class StreamChatLocalizationsJa extends GlobalStreamChatLocalizations {
     if (users.isEmpty) return '';
     final first = users.first;
     if (users.length == 1) {
-      return '${first.name}が入力しています';
+      return '${first.name} さんが入力しています...';
     }
-    return '${first.name}と${users.length - 1}人が入力しています';
+    return '${first.name}と${users.length - 1}人が入力しています...';
   }
 
   @override
   String get threadReplyLabel => 'スレッド返信';
 
   @override
-  String get onlyVisibleToYouText => '自分にのみ見えます';
+  String get onlyVisibleToYouText => '自分にだけ見えます';
 
   @override
-  String threadReplyCountText(int count) => '$countつのスレッド返信';
+  String threadReplyCountText(int count) => '$count 個のスレッド返信';
 
   @override
   String attachmentsUploadProgressText({
     required int remaining,
     required int total,
   }) =>
-      '$remaining/${total}mbのアップロード中…';
+      '$remaining/${total}MBのアップロード中…';
 
   @override
   String pinnedByUserText({
@@ -57,11 +57,11 @@ class StreamChatLocalizationsJa extends GlobalStreamChatLocalizations {
   }) {
     final pinnedByCurrentUser = currentUser.id == pinnedBy.id;
     if (pinnedByCurrentUser) return 'あなたのピン';
-    return '${pinnedBy.name}のピン';
+    return '${pinnedBy.name} さんのピン';
   }
 
   @override
-  String get emptyMessagesText => '現在、メッセージはありません。';
+  String get emptyMessagesText => 'メッセージはありません。';
 
   @override
   String get genericErrorText => 'エラーが発生しました';
@@ -76,13 +76,13 @@ class StreamChatLocalizationsJa extends GlobalStreamChatLocalizations {
   String get messageDeletedText => 'このメッセージは削除されました。';
 
   @override
-  String get messageDeletedLabel => 'メッセージ削除';
+  String get messageDeletedLabel => 'メッセージの削除';
 
   @override
-  String get messageReactionsLabel => 'メッセージのリアクション';
+  String get messageReactionsLabel => 'メッセージへのリアクション';
 
   @override
-  String get emptyChatMessagesText => 'まだメッセージはありません…';
+  String get emptyChatMessagesText => 'まだメッセージはありません';
 
   @override
   String threadSeparatorText(int replyCount) => '$replyCount件の返信';
@@ -97,10 +97,10 @@ class StreamChatLocalizationsJa extends GlobalStreamChatLocalizations {
   String get reconnectingLabel => '再接続中…';
 
   @override
-  String get alsoSendAsDirectMessageLabel => 'ダイレクトメッセージでも送信';
+  String get alsoSendAsDirectMessageLabel => 'DMでも送信';
 
   @override
-  String get addACommentOrSendLabel => 'コメントの追加や送信';
+  String get addACommentOrSendLabel => 'コメントの追加または送信';
 
   @override
   String get searchGifLabel => 'GIFの検索';
@@ -115,7 +115,7 @@ class StreamChatLocalizationsJa extends GlobalStreamChatLocalizations {
   String fileTooLargeAfterCompressionError(double limitInMB) =>
       'ファイルのサイズが大きすぎてアップロードできません。'
       'ファイルサイズの制限は${limitInMB}MBです。'
-      '圧縮を試しましたがサイズをオーバーしました';
+      '圧縮を試しましたが、サイズをオーバーしました';
 
   @override
   String fileTooLargeError(double limitInMB) =>
@@ -270,7 +270,7 @@ class StreamChatLocalizationsJa extends GlobalStreamChatLocalizations {
   String get deleteConversationQuestion => '本当に会話を削除しますか？';
 
   @override
-  String get streamChatLabel => 'ストリームチャット';
+  String get streamChatLabel => 'StreamChat';
 
   @override
   String get searchingForNetworkText => 'ネットワークを検索中';
@@ -324,10 +324,10 @@ class StreamChatLocalizationsJa extends GlobalStreamChatLocalizations {
   String get sendLabel => '送信';
 
   @override
-  String get withText => 'と';
+  String get withText => ' ';
 
   @override
-  String get inText => 'に';
+  String get inText => ' ';
 
   // This is the word for 'customer' or 'user' because saying 'you' directly
   //is too informal and rude
