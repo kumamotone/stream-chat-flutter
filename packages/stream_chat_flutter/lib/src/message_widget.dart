@@ -613,6 +613,8 @@ class _MessageWidgetState extends State<MessageWidget>
           : null,
       child: Portal(
         child: InkWell(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
           splashFactory: NoSplash.splashFactory,
           onTap: () {
             widget.onMessageTap!(widget.message);
@@ -918,6 +920,8 @@ class _MessageWidgetState extends State<MessageWidget>
             child: _buildThreadParticipantsIndicator(threadParticipants),
           ),
         InkWell(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
           splashFactory: NoSplash.splashFactory,
           onTap: widget.onThreadTap != null ? onThreadTap : null,
           child: Text(msg, style: widget.messageTheme.repliesStyle),
