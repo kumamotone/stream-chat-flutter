@@ -615,7 +615,7 @@ class _MessageWidgetState extends State<MessageWidget>
         child: InkWell(
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
-          splashFactory: NoSplash.splashFactory,
+          hoverColor: Colors.transparent,
           onTap: () {
             widget.onMessageTap!(widget.message);
           },
@@ -922,7 +922,7 @@ class _MessageWidgetState extends State<MessageWidget>
         InkWell(
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
-          splashFactory: NoSplash.splashFactory,
+          hoverColor: Colors.transparent,
           onTap: widget.onThreadTap != null ? onThreadTap : null,
           child: Text(msg, style: widget.messageTheme.repliesStyle),
         ),
